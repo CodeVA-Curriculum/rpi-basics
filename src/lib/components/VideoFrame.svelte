@@ -1,5 +1,9 @@
+<script>
+    export let link = "https://www.youtube.com/embed/symTv3m3XfU"
+</script>
+
 <div class='video-frame'>
-    <iframe class="frame" width="100%" height="400px" src="https://www.youtube.com/embed/symTv3m3XfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="frame" width="100%" height="400px" src={link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <style>

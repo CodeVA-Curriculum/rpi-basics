@@ -9,12 +9,12 @@
         Lessons
     </p>
     <ul class="menu-list">
-        <li><a href="{base}/modules/module-1">1. How to Set Up Your Pi</a></li>
+        <li><a href="{base}/modules/lesson-1">1. How to Set Up Your Pi</a></li>
         <li><a href="{base}/modules/lesson-2">2. Controlling Your Pi</a></li>
         <li><a>3. Networking Basics</a></li>
         <li><a>4. Remote Control (SSH)</a></li>
     </ul>
-    <p class="menu-label">
+    <!-- <p class="menu-label">
         Projects
     </p>
     <ul class="menu-list">
@@ -41,7 +41,7 @@
             <li><a>Make a Game</a></li>
             </ul>
         </li>
-    </ul>
+    </ul> -->
 </aside>
 
 <style>

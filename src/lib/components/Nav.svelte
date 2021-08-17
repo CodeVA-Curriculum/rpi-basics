@@ -51,7 +51,7 @@
                     </a>
                 </div>
             </div>
-            <div class="navbar-item is-right has-dropdown is-hoverable">
+            <!-- <div class="navbar-item is-right has-dropdown is-hoverable">
                 <a class="navbar-link" href="https://bulma.io/documentation/overview/start/">
                     Projects
                 </a>
@@ -63,8 +63,8 @@
                     Modifiers
                     </a>
                 </div>
-            </div>
-            <div class="navbar-item is-right has-dropdown is-hoverable">
+            </div> -->
+            <!-- <div class="navbar-item is-right has-dropdown is-hoverable">
                 <a class="navbar-link" href="https://bulma.io/documentation/overview/start/">
                     Extensions
                 </a>
@@ -76,7 +76,7 @@
                     Modifiers
                     </a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
   </nav>
