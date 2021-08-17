@@ -1,5 +1,5 @@
 <script>
-    import {VideoFrame} from '$lib/components'
+    import VideoFrame from '$lib/components/VideoFrame.svelte';
     import Fa from 'svelte-fa';
     import {faAngleLeft, faAngleRight} from '@fortawesome/free-solid-svg-icons';
     import {base} from '$app/paths';
@@ -29,11 +29,11 @@
     
     <div class='columns is-variable is-8'>
         <div class='column'>
-            <VideoFrame link={video} />
+            <VideoFrame video={video} />
         </div>
         <div class='column'>
             <h1 class='title'>{title}</h1>
-            <p>{description}</p>
+            <p><slot /></p>
         </div>
     </div>
         <div class='has-text-centered read-more-break'>
