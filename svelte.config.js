@@ -17,9 +17,14 @@ const config = {
 			assets: 'build',
 			fallback: null
 		}),
-		target: '#svelte'
+		target: '#svelte',
+		paths: {
+			base: '/rpi-basics',
+            assets: '/rpi-basics'
+		}
 	},
 	extensions: ['.svelte', '.md']
+	
 };
 
 export default config;

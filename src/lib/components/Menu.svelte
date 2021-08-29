@@ -1,7 +1,36 @@
 <script>
     // TODO: Add feature to highlight the module that you are on in the menu
     import {base} from '$app/paths';
+    import {page} from '$app/stores';
 
+    
+
+    const menuItems = [
+        {
+            title: "1. How to Set Up Your Pi",
+            link: "/modules/lesson-1"
+        },
+        {
+            title: "2. Controlling Your Pi",
+            link: "/modules/lesson-2"
+        },
+        {
+            title: "3. Networking Basics",
+            link: "/modules/lesson-3"
+        },
+        {
+            title: "4. Remote Control (SSH)",
+            link: "/modules/lesson-4"
+        }
+    ]
+
+    let activeItem = null;
+    $: for(let [i, item] of menuItems.entries()) {
+        // console.log(i, $page.path);
+        if($page.path == item.link) {
+            activeItem = i;
+        }
+    }
 </script>
 
 <aside class="module-list menu p-5">
@@ -9,10 +38,9 @@
         Lessons
     </p>
     <ul class="menu-list">
-        <li><a href="{base}/modules/lesson-1">1. How to Set Up Your Pi</a></li>
-        <li><a href="{base}/modules/lesson-2">2. Controlling Your Pi</a></li>
-        <li><a>3. Networking Basics</a></li>
-        <li><a>4. Remote Control (SSH)</a></li>
+        {#each menuItems as item, i}
+            <li><a class={ i == activeItem ? "is-active" : ""} href="{base + item.link}">{item.title}</a></li>
+        {/each}
     </ul>
     <!-- <p class="menu-label">
         Projects
@@ -46,7 +74,10 @@
 
 <style>
     .module-list {
-        border-right: 1px solid grey;
-        /* box-shadow: 1em 0em 0.75em -1em grey; */
+        border-right: 2px solid whitesmoke;
+        /* box-shadow: 1em 1em 1em -1em grey; */
+        /* b ackground-color: pink; */
+        height: 104%;
+        margin-bottom: 0;
     }
 </style>

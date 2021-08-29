@@ -3,6 +3,33 @@
 // restore default behaviour
 $body-overflow-y: auto;
 
+// Navbar
+$navbar-height: 4rem;
+$navbar-item-img-max-height: 3.5rem;
+
+// Typography variables
+//TODO: Figure out how to host local fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+$family-sans-serif: "Raleway";
+$weight-bold: 900;
+$jumbo: 128pt;
+
+// Colors
+$primary: #64B4E4;
+$grey-dark: #323F47;
+$text: $grey-dark;
+$text-strong: $grey-dark;
+$text-invert: whitesmoke;
+$blue: #64B4E4;
+$green: #84C45A;
+$link: $grey-dark;
+
+// $fullhd: 960px;
+
+p > a {
+    font-weight: $weight-bold;
+}
+
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/utilities/_all";
 @import "../node_modules/bulma/sass/base/_all";
@@ -12,3 +39,5 @@ $body-overflow-y: auto;
 @import "../node_modules/bulma/sass/grid/_all";
 @import "../node_modules/bulma/sass/helpers/_all";
 @import "../node_modules/bulma/sass/layout/_all";
+
+// $primary: #64B4E4;

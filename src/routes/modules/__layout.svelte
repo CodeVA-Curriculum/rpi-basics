@@ -10,7 +10,7 @@
     </div>
     <div class='column'>
         <div class='container'>
-            <nav class="pagination is-rounded is-centered mb-5 gallery" role="navigation" aria-label="pagination">
+            <!-- <nav class="pagination is-rounded is-centered mb-5 gallery" role="navigation" aria-label="pagination">
                 <a class="pagination-previous"><Fa icon={faAngleLeft} /></a>
                 <a class="pagination-next"><Fa icon={faAngleRight} /></a>
                 
@@ -28,8 +28,12 @@
                   <li><span class="pagination-ellipsis">&hellip;</span></li>
                   <li><a class="pagination-link" aria-label="Goto page 86">Extensions</a></li>
                 </ul>
-            </nav>
-            <div class='columns mt-5'>
+            </nav> -->
+            <div class='content section'>
+                <slot />
+            </div>
+            <!-- COOL ARROWS -->
+            <!-- <div class='columns mt-5'>
                 <div class='arrow-wrp column is-1'>
                     <a class='arrow has-text-centered'>
                         <span><Fa size="4x" icon={faAngleLeft} /></span>
@@ -45,12 +49,17 @@
                         <span><Fa size="4x" icon={faAngleRight} /></span>
                     </a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
 
 <style>
+    /* .columns {
+        display: flex;
+        flex-direction: row; 
+        align-items: stretch;
+    } */
     .arrow {
         background-repeat: no-repeat;
         background-position: center center;
@@ -77,7 +86,7 @@
     .arrow-wrp {
         height: 400px;
         padding-top:150px;
-        display: none;
+        /* display: none; */
     }
 
    .arrow:hover span {

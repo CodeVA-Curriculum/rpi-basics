@@ -25,5 +25,3 @@ next: lesson-2
     * Navigate the desktop of the computer
 
 </Banner>
-
-something
