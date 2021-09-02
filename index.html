@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+
+		
+
+		<link rel="modulepreload" href="/rpi-basics/_app/start-777bb4dd.js">
+		<link rel="modulepreload" href="/rpi-basics/_app/chunks/vendor-a5625d6c.js">
+		<link rel="modulepreload" href="/rpi-basics/_app/chunks/paths-45dac81d.js">
+		<link rel="modulepreload" href="/rpi-basics/_app/pages/__layout.svelte-0afb78b5.js">
+		<link rel="modulepreload" href="/rpi-basics/_app/pages/index.svelte-a562dce7.js">
+		<link rel="stylesheet" href="/rpi-basics/_app/assets/start-a8cd1609.css">
+		<link rel="stylesheet" href="/rpi-basics/_app/assets/pages/__layout.svelte-7c454022.css">
+
+		<script type="module">
+			import { start } from "/rpi-basics/_app/start-777bb4dd.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"/rpi-basics","assets":"/rpi-basics"},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/rpi-basics/_app/pages/__layout.svelte-0afb78b5.js"),
+						import("/rpi-basics/_app/pages/index.svelte-a562dce7.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<div>
+    <section class="section is-medium">
+    
+    <div class="container has-text-centered"><h1 class="title is-size-1 block m-4">Raspberry Pi Basics
+      </h1>
+      <h2 class="subtitle is-size-5 block m-5">Learn how to use your Raspberry Pi computer
+      </h2>
+      </div></section>
+    
+    <footer class="footer has-text-left"><div class="columns"><div class="column"></div>
+            <div class="column is-narrow"><div class="columns is-mobile m-0 p-0 has-text-centered"><div class="column"></div>
+                    <div class="column is-narrow"></div>
+                        <img alt="CodeRVA logo" src="/rpi-basics/_app/assets/CodeRVA.33c04316.png" style="height: 2rem; margin-top: 1.25rem;">
+                    <div class="column is-narrow"><img alt="VCU School of Education Center for Innovation in STEM Education logo" src="/rpi-basics/_app/assets/VCU.4cf36cfa.png" style="height: 3rem;"></div>
+                    <div class="column is-narrow"><img alt="CodeVA logo" src="/rpi-basics/_app/assets/CodeVALogo.cdf06ed4.png" style="height: 3rem;"></div>
+                    <div class="column"></div></div></div>
+            <div class="column is-3 has-text-centered is-narrow"><p class="is-size-7 mt-3">These modules were written by <a href="https://jonstapleton.github.io/"><strong>Jon Stapleton</strong></a> on behalf of <a href="https://www.codevirginia.org/"><strong>CodeVA</strong></a>. The source code is licensed
+                    <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>. The website content
+                    is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.</p></div>
+            <div class="column"></div></div></footer>
+</div>
+
+
+
+	
+</div>
+	</body>
+</html>
