@@ -1,7 +1,7 @@
 ---
 title: 3. Networking Basics
 description: Lorum ipsum sit dolor amet
-video: https://www.youtube.com/embed/symTv3m3XfU
+video: https://www.youtube.com/embed/SUo4UnN7fgY
 previous: lesson-2
 next: lesson-4
 ---

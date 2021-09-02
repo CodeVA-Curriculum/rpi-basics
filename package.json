@@ -1,13 +1,11 @@
 {
-  "name": "~TODO~",
+  "name": "rpi-basics",
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev --host",
-    "build": "svelte-kit build",
-    "preview": "svelte-kit preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "eslint --ignore-path .gitignore ."
+    "build": "rm -rf build && svelte-kit build && touch build/.nojekyll",
+    "deploy": "npm run build && npx gh-pages -d build -t true",
+    "preview": "svelte-kit preview"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^1.0.0-next.16",
@@ -28,6 +26,7 @@
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "bulma": "^0.9.3",
+    "gh-pages": "^3.2.3",
     "svelte-fa": "^2.2.1"
   }
 }

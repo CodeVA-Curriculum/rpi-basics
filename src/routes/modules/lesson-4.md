@@ -1,7 +1,7 @@
 ---
 title: 4. Remote Control (SSH)
 description: Lorum ipsum sit dolor amet
-video: https://www.youtube.com/embed/symTv3m3XfU
+video: https://www.youtube.com/embed/NNcitgABxeg
 previous: lesson-3
 ---
 
