@@ -16,7 +16,7 @@
 
 <nav class="navbar is-primary">
     <div class="navbar-brand">
-      <a class="navbar-item" href="{base}">
+      <a class="navbar-item" href="{base}/">
         <h1 class='subtitle heading'><span><img class='rpi' src={RPiLogo} alt="Raspberry Pi Foundation logo" ></span>codeva-curriculum/rpi-basics</h1>
       </a>
       <button class="navbar-burger {navMenuClass} mr-5" on:click={activateNavMenu}>
@@ -31,7 +31,7 @@
             
         </div>
         <div class="navbar-end  is-hidden-desktop">
-            <a class="navbar-item" href="{base}">
+            <a class="navbar-item" href="{base}/">
                 Home
             </a>
             <div class="navbar-item is-right has-dropdown is-hoverable">
