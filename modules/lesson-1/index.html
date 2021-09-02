@@ -12,7 +12,9 @@
 		<link rel="modulepreload" href="/rpi-basics/_app/chunks/vendor-8bf658ca.js">
 		<link rel="modulepreload" href="/rpi-basics/_app/chunks/paths-45dac81d.js">
 		<link rel="modulepreload" href="/rpi-basics/_app/pages/__layout.svelte-e01a4de5.js">
-		<link rel="modulepreload" href="/rpi-basics/_app/pages/index.svelte-70d0608e.js">
+		<link rel="modulepreload" href="/rpi-basics/_app/pages/modules/__layout.svelte-c44cdca6.js">
+		<link rel="modulepreload" href="/rpi-basics/_app/pages/modules/lesson-1.md-549541f3.js">
+		<link rel="modulepreload" href="/rpi-basics/_app/chunks/Banner-8b0751a8.js">
 		<link rel="stylesheet" href="/rpi-basics/_app/assets/start-a8cd1609.css">
 		<link rel="stylesheet" href="/rpi-basics/_app/assets/pages/__layout.svelte-af15774d.css">
 		<link rel="stylesheet" href="/rpi-basics/_app/assets/Banner.svelte_svelte&type=style&lang-64bdb3e2.css">
@@ -32,11 +34,12 @@
 					error: null,
 					nodes: [
 						import("/rpi-basics/_app/pages/__layout.svelte-e01a4de5.js"),
-						import("/rpi-basics/_app/pages/index.svelte-70d0608e.js")
+						import("/rpi-basics/_app/pages/modules/__layout.svelte-c44cdca6.js"),
+						import("/rpi-basics/_app/pages/modules/lesson-1.md-549541f3.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "/",
+						path: "/modules/lesson-1",
 						query: new URLSearchParams(""),
 						params: {}
 					}
@@ -49,13 +52,38 @@
 
 
 <div>
-    <section class="section is-medium">
+    <div class="module-layout columns"><div class="column is-2 px-5 is-hidden-touch"><aside class="module-list menu p-5 svelte-1oh4xgs"><p class="menu-label">Lessons
+    </p>
+    <ul class="menu-list"><li><a class="is-active" href="/rpi-basics/modules/lesson-1">1. How to Set Up Your Pi</a></li><li><a class="" href="/rpi-basics/modules/lesson-2">2. Controlling Your Pi</a></li><li><a class="" href="/rpi-basics/modules/lesson-3">3. Networking Basics</a></li><li><a class="" href="/rpi-basics/modules/lesson-4">4. Remote Control (SSH)</a></li></ul>
     
-    <div class="container has-text-centered"><h1 class="title is-size-1 block m-4">Raspberry Pi Basics
-      </h1>
-      <h2 class="subtitle is-size-5 block m-5">Learn how to use your Raspberry Pi computer
-      </h2>
-      </div></section>
+</aside></div>
+    <div class="column"><div class="container">
+            <div class="content section"><div class="banner">
+    
+    
+    
+    <div class="columns is-variable is-8"><div class="column video svelte-1hj638m"><div class="video-frame has-text-centered svelte-l6egxm">
+        <div class="has-text-centered button spinner-btn is-loading is-large frame disabled svelte-l6egxm"></div>
+        
+    
+    <iframe class="frame svelte-l6egxm" width="100%" height="100%" src="https://www.youtube.com/embed/sQ1jRVxmV-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></div>
+        <div class="column text"><h1 class="title">1. How to Set Up Your Raspberry Pi</h1>
+            <p><p>This lesson covers how to set up your <a href="">Raspberry Pi computer</a>. The Raspberry Pi is special because it&#39;s a <strong>hackable</strong> computer; you can change things, download lots of free software, and use it in all sorts of interesting ways. You&#39;ll need a couple of things to get started with this lesson:</p>
+<ul><li>A <a href="">Raspberry Pi computer</a></li>
+<li>A monitor with an HDMI input</li>
+<li>A HDMI cable</li>
+<li>A USB keyboard</li>
+<li>A USB mouse</li></ul>
+<p>Once you have all those things, you should be ready to go! In this lesson, you&#39;ll learn how to:</p>
+<ul><li>Start up your Raspberry Pi</li>
+<li>Hook up your monitor, keyboard, and mouse</li>
+<li>Navigate the desktop of the computer</li></ul></p></div></div>
+        
+</div></div>
+            
+            </div></div>
+</div>
     
     <footer class="footer has-text-left"><div class="columns"><div class="column"></div>
             <div class="column is-narrow"><div class="columns is-mobile m-0 p-0 has-text-centered"><div class="column"></div>
